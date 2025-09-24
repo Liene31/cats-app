@@ -17,6 +17,7 @@ body {
 .inner {
   max-width: 900px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 header {
@@ -177,34 +178,15 @@ footer {
 
 /* Cats */
 
-h1 {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.cards-box {
+.cat-info {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
 }
 
-.card {
-  width: 40%;
-}
-
-.card img {
-  border-radius: 5px;
-}
-
-/* .card h2 {
-  text-align: center;
-} */
-
-.card .description p {
-  font-family: "Lato", sans-serif;
-}
-
-.box {
+.cat-info .header-box {
   display: flex;
-  gap: 20px;
+}
+
+.main-info {
+  display: flex;
 }
