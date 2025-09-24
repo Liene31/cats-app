@@ -17,7 +17,6 @@ body {
 .inner {
   max-width: 900px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 header {
@@ -57,10 +56,13 @@ header {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
   background-color: #f5e6d3;
+}
+
+.index-main {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -178,15 +180,47 @@ footer {
 
 /* Cats */
 
+.cats-title {
+  text-align: center;
+  padding: 25px 0;
+}
+
 .cat-info {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 45px;
 }
 
 .cat-info .header-box {
   display: flex;
+  gap: 20px;
+}
+
+.cat-info .cat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cat-card img {
+  border-radius: 10px;
+}
+
+.cat-card button {
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #1c2b36;
+  color: #f5e6d3;
+}
+
+.cat-info h2 {
+  align-self: center;
 }
 
 .main-info {
   display: flex;
+  justify-content: space-between;
 }
