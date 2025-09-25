@@ -203,7 +203,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: #faf7f3;
+  background: #f5efe6;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -215,6 +215,7 @@ footer {
 
 .cat-card img {
   border-radius: 10px;
+  width: 200px;
 }
 
 .cat-card button {
@@ -244,7 +245,5 @@ footer {
 }
 
 .description > li {
-  font-size: 14px;
+  font-size: 13px;
 }
-
-/* #F5EFE6  #FAF7F3 #F9F3EF #FFF2EB*/
