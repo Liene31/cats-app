@@ -27,6 +27,7 @@ header {
 .header nav {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 
   ul {
     display: flex;
@@ -97,7 +98,7 @@ main {
     cursor: pointer;
 
     &:hover {
-      background-color: #2e3e4b; /* slightly lighter navy */
+      background-color: #2e3e4b;
     }
 
     @media (max-width: 650px) {
@@ -162,6 +163,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 
   p {
     color: #f5e6d3;
@@ -191,12 +193,14 @@ footer {
   justify-content: center;
   gap: 30px;
   padding-bottom: 45px;
+  padding: 20px 20px 45px 20px;
 }
 
 .cat-info .header-box {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* Order:1 here im media queries  */
 }
 
 .cat-card {
@@ -213,9 +217,23 @@ footer {
   }
 }
 
+.header-main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 650px) {
+    flex-direction: row;
+  }
+}
+
 .cat-card img {
   border-radius: 10px;
   width: 200px;
+
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 }
 
 .cat-card button {
@@ -225,6 +243,11 @@ footer {
   background-color: #1c2b36;
   color: #f5e6d3;
   cursor: pointer;
+
+  &:hover {
+    letter-spacing: 1px;
+    background-color: #2e3e4b;
+  }
 }
 
 .cat-info h2 {
@@ -236,6 +259,11 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 25px;
+
+  @media (max-width: 650px) {
+    align-self: center;
+    line-height: 1.5em;
+  }
 }
 
 .categories > li {
