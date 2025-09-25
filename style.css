@@ -217,6 +217,13 @@ footer {
   }
 }
 
+/* Check where to put this media */
+@media (max-width: 650px) {
+  .cat-card:nth-child(even) .header-box {
+    order: 1;
+  }
+}
+
 .header-main-box {
   display: flex;
   flex-direction: column;
