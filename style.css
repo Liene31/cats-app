@@ -203,7 +203,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: #ffffff;
+  background: #faf7f3;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -234,9 +234,17 @@ footer {
 .main-info {
   display: flex;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .categories > li {
   font-family: "Lato", sans-serif;
   font-weight: bold;
+  font-size: 14px;
 }
+
+.description > li {
+  font-size: 14px;
+}
+
+/* #F5EFE6  #FAF7F3 #F9F3EF #FFF2EB*/
