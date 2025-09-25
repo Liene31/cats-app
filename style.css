@@ -195,13 +195,22 @@ footer {
 
 .cat-info .header-box {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.cat-info .cat-card {
+.cat-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .cat-card img {
@@ -214,13 +223,20 @@ footer {
   border: none;
   background-color: #1c2b36;
   color: #f5e6d3;
+  cursor: pointer;
 }
 
 .cat-info h2 {
   align-self: center;
+  order: 1;
 }
 
 .main-info {
   display: flex;
   justify-content: space-between;
+}
+
+.categories > li {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
