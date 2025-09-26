@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- JS -->
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
     <title>Cats</title>
   </head>
   <body>
@@ -28,7 +33,7 @@
               class="cat-logo"
             />
           </div>
-          <ul>
+          <ul class="menu" id="menu">
             <li><a href="./index.html">About</a></li>
             <li><a href="./cats.html">Cats</a></li>
             <li><a href="#">Gallery</a></li>
@@ -37,6 +42,11 @@
           <div class="moon-logo">
             <img src="./images/moon-logo.jpg" alt="moon logo" width="40px" />
           </div>
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger-btn">
+            <span class="material-icons menu-icon" id="menu-icon">menu</span>
+            <span class="material-icons close-icon" id="close-icon">close</span>
+          </button>
         </nav>
       </div>
     </header>
@@ -64,7 +74,7 @@
       <section class="description">
         <div class="inner">
           <div class="description-box">
-            <h2>A World of Whiskers</h2>
+            <h2 id="test">A World of Whiskers</h2>
             <p>
               Cats have been our companions for centuries, each breed bringing
               its own unique charm, personality, and history. This site is
@@ -121,5 +131,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
