@@ -50,3 +50,8 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
     isClicked = true;
   }
 });
+
+// Issues:
+// 1. Page reloads and and doesn't keep the dark theme (when via JS)
+// 2. Two HTML, one JS. cats.html throws error because id="index-para" exists only in index.html
+// 3. In mobile version dark-light toggle doesn't work since I am adding it via JS
