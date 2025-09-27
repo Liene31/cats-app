@@ -112,9 +112,8 @@ header {
 @media (max-width: 650px) {
   .hamburger {
     display: block;
-    position: fixed;
+    /* position: fixed; */
     z-index: 100;
-    top: 1em;
     right: 1em;
     padding: 0.25em;
     border: var(--primary-dark-color) solid 1px;
@@ -128,6 +127,10 @@ header {
 
     .menu-icon {
       display: block;
+    }
+
+    .material-icons {
+      font-size: 1.875rem;
     }
   }
 }
@@ -321,6 +324,8 @@ footer {
 .cat-card img {
   border-radius: var(--border-radius-medium);
   width: 200px;
+  height: 140px;
+  border: 1px solid var(--primary-dark-color);
 
   @media (max-width: 650px) {
     width: 100%;
