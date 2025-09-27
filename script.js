@@ -22,3 +22,31 @@ document.getElementById("hamburger-btn").addEventListener("click", () => {
     isShowMenu = false;
   }
 });
+
+//Theme Toggle
+
+let isClicked = true;
+
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  const root = document.documentElement;
+  const indexTitle = document.getElementById("index-title");
+  const indexPara = document.getElementById("index-para");
+
+  if (isClicked) {
+    root.style.setProperty("--primary-dark-color", "#0b141a");
+    root.style.setProperty("--primary-light-color", "#452a3a");
+
+    indexTitle.style.color = "#f5e6d3";
+    indexPara.style.color = "#f5e6d3";
+
+    isClicked = false;
+  } else {
+    root.style.setProperty("--primary-dark-color", "#1c2b36");
+    root.style.setProperty("--primary-light-color", "#f5e6d3");
+
+    indexTitle.style.color = "#1c2b36";
+    indexPara.style.color = "#1c2b36";
+
+    isClicked = true;
+  }
+});

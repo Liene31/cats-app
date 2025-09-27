@@ -26,6 +26,13 @@
   }
 }
 
+/* Theme Toggle with JS */
+
+.dark-theme {
+  --primary-dark-color: #0b141a;
+  --primary-light-color: #452a3a;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -326,10 +333,6 @@ footer {
   width: 200px;
   height: 140px;
   border: 1px solid var(--primary-dark-color);
-
-  @media (max-width: 650px) {
-    width: 100%;
-  }
 }
 
 .cat-card button {
