@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <!-- <script src="./script.js"></script> -->
+    <title>Cats</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner header">
+        <nav>
+          <div>
+            <img
+              src="./images/cat-logo.webp"
+              alt="cat-logo"
+              width="40px"
+              class="cat-logo"
+            />
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./cats.html">Cats</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li id="hamburger-moon-logo"></li>
+          </ul>
+          <div class="moon-logo" id="theme-toggle">
+            <img src="./images/moon-logo.jpg" alt="moon logo" width="40px" />
+          </div>
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger-btn">
+            <span class="material-icons menu-icon" id="menu-icon">menu</span>
+            <span class="material-icons close-icon" id="close-icon">close</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="index-main">
+      <h1>Get in Touch</h1>
+      <div class="contact-form">
+        <form>
+          <!-- First Name -->
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required />
+          <!-- Last Name -->
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required />
+          <!-- Mobile No -->
+          <label for="tel-number">Mobile No</label>
+          <input type="tel" name="tel-number" id="tel-number" />
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <!-- Continent -->
+          <label for="continent-select"
+            >From which part of the world are you visiting our page ?</label
+          >
+          <select name="continents" id="continent-select">
+            <option value="" hidden>--Please choose an option--</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+            <option value="antarctica">Antarctica 🐧</option>
+            <option value="europe">Europe</option>
+            <option value="australia">Australia</option>
+          </select>
+
+          <!-- Message -->
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            required
+            maxlength="250"
+          ></textarea>
+
+          <!-- Check for the Newsletter -->
+          <input type="checkbox" name="newsletter" id="newsletter" />
+          <label for="newsletter"
+            >Would you like to receive a newsletter?</label
+          >
+          <!-- If Newsletter True reveal this part -->
+
+          <!-- Breeds -->
+          <legend>About which breed would like to receive information ?</legend>
+          <input type="checkbox" name="siamese" id="siamese" />
+          <label for="siamese">Siamese</label>
+
+          <input type="checkbox" name="maine-coon" id="maine-coon" />
+          <label for="maine-coon">Maine Coon</label>
+
+          <input type="checkbox" name="persian" id="persian" />
+          <label for="persian">Persian</label>
+
+          <input type="checkbox" name="ragdoll" id="ragdoll" />
+          <label for="ragdoll">Ragdoll</label>
+
+          <input type="checkbox" name="siberian" id="siberian" />
+          <label for="siberian">Siberian</label>
+
+          <input
+            type="checkbox"
+            name="norwegian-forest"
+            id="norwegian-forest"
+          />
+          <label for="norwegian-forest">Norwegian Forest</label>
+
+          <!-- Frequency of the Newsletter -->
+          <legend>How often would you like to receive our Newsletter?</legend>
+          <input
+            type="radio"
+            name="frequency"
+            id="once-a-week"
+            value="once-a-week"
+            checked
+          />
+          <label for="once-a-week">Once a Week</label>
+
+          <input
+            type="radio"
+            name="frequency"
+            id="once-a-month"
+            value="once-a-month"
+          />
+          <label for="once-a-month">Once a Month</label>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="inner footer">
+        <p>&copy Cats 2025</p>
+        <ul>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/youtube.svg"
+                alt="youtube logo"
+                width="30px"
+                class="social-logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/facebook.svg"
+                alt="facebook logo"
+                width="30px"
+                class="social-logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./images/instagram.svg"
+                alt="instagram logo"
+                width="30px"
+                class="social-logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

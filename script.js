@@ -65,5 +65,5 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
 // 2. Two HTML, one JS. cats.html throws error because id="index-para" exists only in index.html
 // 3. In mobile version dark-light toggle doesn't work (via JS)
 
-localStorage.setItem("theme", "dark");
+const currentTheme = localStorage.setItem("theme", "dark");
 localStorage.getItem("theme");
