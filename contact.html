@@ -51,22 +51,34 @@
         </nav>
       </div>
     </header>
-    <main class="index-main">
-      <h1>Get in Touch</h1>
-      <div class="contact-form">
+    <main class="contact-main">
+      <div class="contact-container">
+        <h1>Get in Touch</h1>
         <form>
           <!-- First Name -->
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" required />
-          <!-- Last Name -->
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" required />
+          <div class="wrap-box">
+            <div class="box-label">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+            <!-- Last Name -->
+            <div class="box-label">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+          </div>
           <!-- Mobile No -->
-          <label for="tel-number">Mobile No</label>
-          <input type="tel" name="tel-number" id="tel-number" />
-          <!-- Email -->
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <div class="wrap-box">
+            <div class="box-label">
+              <label for="tel-number">Mobile No</label>
+              <input type="tel" name="tel-number" id="tel-number" />
+            </div>
+            <!-- Email -->
+            <div class="box-label">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+          </div>
           <!-- Continent -->
           <label for="continent-select"
             >From which part of the world are you visiting our page ?</label
@@ -89,57 +101,116 @@
             id="message"
             required
             maxlength="250"
+            rows="5"
+            cols="50"
           ></textarea>
 
           <!-- Check for the Newsletter -->
-          <input type="checkbox" name="newsletter" id="newsletter" />
-          <label for="newsletter"
-            >Would you like to receive a newsletter?</label
-          >
+          <div class="newsletter-box">
+            <input type="checkbox" name="newsletter" id="newsletter" />
+            <label for="newsletter"
+              >Would you like to receive a newsletter?</label
+            >
+          </div>
           <!-- If Newsletter True reveal this part -->
 
           <!-- Breeds -->
-          <legend>About which breed would like to receive information ?</legend>
-          <input type="checkbox" name="siamese" id="siamese" />
-          <label for="siamese">Siamese</label>
+          <div class="breed-box">
+            <legend>
+              About which breed would like to receive information ?
+            </legend>
+            <div class="breed-box-inner">
+              <div class="breed-box-wrap">
+                <input type="checkbox" name="siamese" id="siamese" />
+                <label for="siamese"
+                  ><img
+                    src="./images/siamese-icon.svg"
+                    alt="siamese icon"
+                    width="20px"
+                  />Siamese</label
+                >
+              </div>
+              <div class="breed-box-wrap">
+                <input type="checkbox" name="maine-coon" id="maine-coon" />
+                <label for="maine-coon"
+                  ><img
+                    src="./images/siamese-icon.svg"
+                    alt="siamese icon"
+                    width="20px"
+                  />Maine Coon</label
+                >
+              </div>
+              <div class="breed-box-wrap">
+                <input type="checkbox" name="persian" id="persian" />
+                <label for="persian"
+                  ><img
+                    src="./images/persian-icon.svg"
+                    alt="persian-icon"
+                    width="20px"
+                  />Persian</label
+                >
+              </div>
+              <div class="breed-box-wrap">
+                <input type="checkbox" name="ragdoll" id="ragdoll" />
+                <label for="ragdoll"
+                  ><img
+                    src="./images/ragdoll-icon.svg"
+                    alt="ragdoll-icon"
+                    width="20px"
+                  />Ragdoll</label
+                >
+              </div>
 
-          <input type="checkbox" name="maine-coon" id="maine-coon" />
-          <label for="maine-coon">Maine Coon</label>
-
-          <input type="checkbox" name="persian" id="persian" />
-          <label for="persian">Persian</label>
-
-          <input type="checkbox" name="ragdoll" id="ragdoll" />
-          <label for="ragdoll">Ragdoll</label>
-
-          <input type="checkbox" name="siberian" id="siberian" />
-          <label for="siberian">Siberian</label>
-
-          <input
-            type="checkbox"
-            name="norwegian-forest"
-            id="norwegian-forest"
-          />
-          <label for="norwegian-forest">Norwegian Forest</label>
+              <div class="breed-box-wrap">
+                <input type="checkbox" name="siberian" id="siberian" />
+                <label for="siberian"
+                  ><img
+                    src="./images/siamese-icon.svg"
+                    alt="siamese icon"
+                    width="20px"
+                  />Siberian</label
+                >
+              </div>
+              <div class="breed-box-wrap">
+                <input
+                  type="checkbox"
+                  name="norwegian-forest"
+                  id="norwegian-forest"
+                />
+                <label for="norwegian-forest"
+                  ><img
+                    src="./images/siamese-icon.svg"
+                    alt="siamese icon"
+                    width="20px"
+                  />Norwegian Forest</label
+                >
+              </div>
+            </div>
+          </div>
 
           <!-- Frequency of the Newsletter -->
-          <legend>How often would you like to receive our Newsletter?</legend>
-          <input
-            type="radio"
-            name="frequency"
-            id="once-a-week"
-            value="once-a-week"
-            checked
-          />
-          <label for="once-a-week">Once a Week</label>
+          <div class="frequency-box">
+            <legend>How often would you like to receive our Newsletter?</legend>
+            <input
+              type="radio"
+              name="frequency"
+              id="once-a-week"
+              value="once-a-week"
+              checked
+            />
+            <label for="once-a-week">Once a Week</label>
 
-          <input
-            type="radio"
-            name="frequency"
-            id="once-a-month"
-            value="once-a-month"
-          />
-          <label for="once-a-month">Once a Month</label>
+            <input
+              type="radio"
+              name="frequency"
+              id="once-a-month"
+              value="once-a-month"
+            />
+            <label for="once-a-month">Once a Month</label>
+          </div>
+
+          <!-- Button -->
+          <button type="button">SUBMIT</button>
         </form>
       </div>
     </main>
