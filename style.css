@@ -394,6 +394,10 @@ footer {
   h1 {
     text-align: center;
     padding: 1.875rem 0; /* 30px */
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--text-color-light);
+    }
   }
 }
 

@@ -64,9 +64,17 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
 
 const newsletterCheckbox = document.getElementById("newsletter");
 const choiceBlock = document.getElementById("choice-container");
+const checkboxBreeds = document.querySelectorAll(".checkbox-breeds");
 
 newsletterCheckbox.addEventListener("click", () => {
   if (newsletterCheckbox.checked) {
     choiceBlock.style.display = "block";
+  } else {
+    choiceBlock.style.display = "none";
+
+    // remove all the checks if user has added
+    checkboxBreeds.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
   }
 });
