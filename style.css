@@ -412,9 +412,9 @@ form {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
 
-  /* @media (max-width: 585px) {
-    width: 95%;
-  } */
+  @media (max-width: 585px) {
+    width: 97%;
+  }
 }
 
 .wrap-box {
