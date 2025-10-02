@@ -411,11 +411,21 @@ form {
   &:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
+
+  @media (max-width: 585px) {
+    width: 80%;
+  }
 }
 
 .wrap-box {
   display: flex;
   gap: 1.25em;
+
+  @media (max-width: 585px) {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .box-label {
