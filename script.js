@@ -60,10 +60,13 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
   }
 });
 
-// Issues:
-// 1. Page reloads and and doesn't keep the dark theme (when via JS)
-// 2. Two HTML, one JS. cats.html throws error because id="index-para" exists only in index.html
-// 3. In mobile version dark-light toggle doesn't work (via JS)
+// Check for the Newsletter
 
-const currentTheme = localStorage.setItem("theme", "dark");
-localStorage.getItem("theme");
+const newsletterCheckbox = document.getElementById("newsletter");
+const choiceBlock = document.getElementById("choice-container");
+
+newsletterCheckbox.addEventListener("click", () => {
+  if (newsletterCheckbox.checked) {
+    choiceBlock.style.display = "block";
+  }
+});

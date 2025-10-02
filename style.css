@@ -446,6 +446,11 @@ form {
   }
 }
 
+/* Breed-box and frequency-box are displayed only if the newsletter is ticked */
+.choice-container {
+  display: none;
+}
+
 .breed-box {
   display: flex;
   flex-direction: column;
@@ -459,6 +464,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.313rem; /* 5px */
+  padding-top: 1rem;
 }
 
 /* Input */
@@ -491,4 +497,11 @@ form > button {
     letter-spacing: 1px;
     background-color: var(--hover-dark-color);
   }
+}
+
+/* le label qui possède comme voisin un input qui est requis */
+label:has(~ input:required)::after {
+  content: "*";
+  color: red;
+  margin-left: 0.25rem;
 }
