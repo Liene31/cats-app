@@ -79,17 +79,46 @@ newsletterCheckbox.addEventListener("click", () => {
   }
 });
 
+//Progress Bar
+
 const textAreaEl = document.getElementById("message");
 const progressBar = document.getElementById("progress-bar");
+
+function displayRemainingChars(messageLength) {
+  const remainingChars = document.getElementById("remaining-chars");
+  remainingChars.textContent = `*You have left ${
+    300 - messageLength
+  } characters`;
+}
+
+function calcProgressBarWidth(messageLength) {
+  //Rounded because when deleting, last % stays with 0.3333 and progress bars doesn't disappear
+  return Math.floor(messageLength / 3);
+}
+
+function changeProgressBarColor(color) {
+  progressBar.style.backgroundColor = color;
+}
+
+function changeProgressBarWidth(messageLength) {
+  progressBar.style.width = `${calcProgressBarWidth(messageLength)}%`;
+}
 
 // Gets the value from the textarea
 textAreaEl.addEventListener("input", () => {
   const messageLength = textAreaEl.textLength;
-  console.log(messageLength);
 
-  //Moves the progress bar right to left depending on characters typed/deleted
-  //Rounded because when deleting, last % stays with 0.3333 and progress bars doesn't disappear
-  if (messageLength) {
-    progressBar.style.width = `${Math.floor(messageLength / 3)}%`;
+  //Change the color and moves the progress bar right to left depending on characters typed/deleted
+  if (messageLength < 150) {
+    changeProgressBarWidth(messageLength);
+    changeProgressBarColor("#509d2f");
+  } else if (messageLength > 250) {
+    changeProgressBarWidth(messageLength);
+    changeProgressBarColor("#bf0d40");
+  } else {
+    changeProgressBarWidth(messageLength);
+    changeProgressBarColor("#ff8c1a");
   }
+
+  displayRemainingChars(messageLength);
 });

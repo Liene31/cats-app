@@ -489,7 +489,14 @@ textarea {
   width: 0%;
   height: 10px;
   border-radius: var(--border-radius-small);
-  background-color: green;
+  background-color: #509d2f;
+}
+
+.remaining-chars {
+  font-style: italic;
+  color: #898989;
+  font-size: 0.75rem;
+  margin: -0.625rem 0 0.625rem 0;
 }
 
 form > button {
