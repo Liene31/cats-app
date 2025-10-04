@@ -100,10 +100,16 @@
             name="message"
             id="message"
             required
-            maxlength="250"
+            maxlength="300"
             rows="5"
             cols="50"
           ></textarea>
+
+          <!-- Progress bar for remaining chars -->
+          <div id="progress">
+            <div id="progress-bar" class="progress-bar"></div>
+            <p id="remaining-chars">remaining</p>
+          </div>
 
           <!-- Check for the Newsletter -->
           <div class="newsletter-box">

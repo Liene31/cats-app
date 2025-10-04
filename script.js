@@ -78,3 +78,18 @@ newsletterCheckbox.addEventListener("click", () => {
     });
   }
 });
+
+const textAreaEl = document.getElementById("message");
+const progressBar = document.getElementById("progress-bar");
+
+// Gets the value from the textarea
+textAreaEl.addEventListener("input", () => {
+  const messageLength = textAreaEl.textLength;
+  console.log(messageLength);
+
+  //Moves the progress bar right to left depending on characters typed/deleted
+  //Rounded because when deleting, last % stays with 0.3333 and progress bars doesn't disappear
+  if (messageLength) {
+    progressBar.style.width = `${Math.floor(messageLength / 3)}%`;
+  }
+});

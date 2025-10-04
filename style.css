@@ -485,6 +485,13 @@ textarea {
   resize: none;
 }
 
+.progress-bar {
+  width: 0%;
+  height: 10px;
+  border-radius: var(--border-radius-small);
+  background-color: green;
+}
+
 form > button {
   padding: 0.8rem 0;
   /* width: 80%; */
